@@ -20,7 +20,7 @@ define(function(require) {
         },
         
         getContentElement: function() {
-            var element = $('section', this.$el);
+            var element = $('#content', this.$el);
             element.off();
             return element;
         },

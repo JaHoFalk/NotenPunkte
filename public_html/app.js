@@ -12,6 +12,7 @@ require.config({
         // core libs
         jquery: 'jquery/jquery',
         backbone: 'backbone/backbone',
+        backbonelocalstorage: 'backbone/backbone.localStorage',
         // template
         Underscore: 'underscore/underscore',
         underscore: 'require-handlebars-plugin/hbs/underscore',

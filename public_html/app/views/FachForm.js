@@ -12,7 +12,7 @@ define(function(require) {
             this.render();
         },
         events: {
-            "click #ok": "notensave"
+            "click #ok": "notensave",
 //            "click #ok": "test"
         },
         test: function() {

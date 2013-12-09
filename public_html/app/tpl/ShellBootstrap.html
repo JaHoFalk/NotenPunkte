@@ -1,7 +1,11 @@
 <div class="navbar navbar-default navbar-fixed-top center" role="navigation">
-    <div class="container">
-       <a class="navbar-brand" href="#home">{{title}}</a>
-    </div>
+
+    {{#if showBackButton }}
+    <a class="btn btn-default pull-left" href="#home" style="margin: 10px">Back</a>
+    {{/if}}
+
+    <span class="navbar-brand">{{title}}</span>
+    <button id="{{action}}" type="button" class="btn btn-info pull-right" style="margin: 10px">+</button>
 </div>
 
 

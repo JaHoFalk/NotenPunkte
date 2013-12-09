@@ -3,8 +3,8 @@ define(function(require) {
     "use strict";
     var Backbone = require('backbone');
 
-    var HomeView = require('views/Home');
-    var FachView = require('views/Fach');
+    var FachView = require('views/FachList');
+    var NoteView = require('views/NoteList');
     var ShellView = require('views/ShellBootstrap');
 
     var $body = $('body');
@@ -20,12 +20,12 @@ define(function(require) {
             '*path': 'home'
         },
         home: function() {
-              shellView.setHeader ("Fächer");
-            var view = new HomeView({el: shellView.getContentElement()});
+            shellView.setHeader({title: "Fächer", action:'add_fach'});
+            var view = new FachView({el: shellView.getContentElement()});
         },
         fach: function(id) {
-            shellView.setHeader (id);
-            var view = new FachView({el: shellView.getContentElement()});
+            shellView.setHeader({title: id, showBackButton: true, action:'add_note'});
+            var view = new NoteView({el: shellView.getContentElement()});
         },
     });
 });

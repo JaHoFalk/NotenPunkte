@@ -4,7 +4,7 @@ body {
     padding-bottom: 20px;
 }
 
-.center.navbar .navbar-brand {
+.center .navbar-brand {
     float:none;
     display:inline-block;
     *display:inline; /* ie7 fix */

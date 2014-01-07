@@ -1,11 +1,8 @@
 <div class="container">
     <div class="input-group">
-        <input type="number" class="form-control" id="punkte">
-        <span class="input-group-addon">Punkte (0..15)</span>
+        <input type="range" value="0" min="0" max="15" class="form-control" id="slider">
+        <span class="input-group-addon" id="sliderValue">Punkte: 0, Note: 6</span>
     </div>    
-    <div class="input-group">
-        <input type="text" class="form-control" id="note">
-        <span class="input-group-addon">Note (1+..6)</span>
-    </div>
+
     <button type="button" class="btn btn-primary" id="ok">Save</button>
 </div>

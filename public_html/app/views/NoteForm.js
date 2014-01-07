@@ -34,6 +34,10 @@ define(function(require) {
                 .val();
             var note = this.$el.find("#note")
                 .val();
+////        $possible_values = array( 'a', 1, 'good' );
+//if ( !in_array( $untrusted, $possible_values ) )
+//  die( "Don't do that!" );
+  
             console.log("Eingabe Punkte: " + punkte + " Eingabe Note: " + note);
             
         },

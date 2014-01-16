@@ -5,6 +5,7 @@ define(function(require) {
     var template = require('hbs!app/tpl/ShellBootstrap');
 
     var NoteForm = require('views/NoteForm');
+    var Fach = require('views/Fach')
 
     return Backbone.View.extend({
         initialize: function(options) {
@@ -21,7 +22,8 @@ define(function(require) {
         },
         add_fach: function() {
             console.log("Add fach ... ");
-            this.getContentElement().html('__fach_form__');
+            new Fach({el: this.getContentElement()}).render();
+//            this.getContentElement().html('__fach_form__');
         },
         add_note: function() {
             console.log("Add note ... ");
